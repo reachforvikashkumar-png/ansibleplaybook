@@ -1,0 +1,10 @@
+---
+- hosts: demo
+  tasks:
+    - name: Change permissions and ownership
+      file:
+        path: /home/ansible/mydir
+        mode: '0755'
+        owner: ansible
+        group: ansible
+...
