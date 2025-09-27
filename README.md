@@ -18,16 +18,3 @@ tasks:
       state: directory
 ---
 
-# File directory 
----
-- hosts: demo
-   tasks:
-     - name: Create a directory
-       file:
-         path: /home/ansible/mydir
-         state: directory
-     - name: Create a file
-       file:
-         path: /home/ansible/myfile.txt
-         state: touch
-...
